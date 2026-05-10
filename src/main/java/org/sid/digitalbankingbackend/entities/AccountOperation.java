@@ -11,11 +11,10 @@ import java.util.Date;
 @Data @NoArgsConstructor @AllArgsConstructor
 public class AccountOperation {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id1;
     private Long id;
     private Date operationDate;
     private double amount;
-
+    @Enumerated(EnumType.STRING)
     private OperationType type;
     @ManyToOne
     private BankAccount bankAccount;

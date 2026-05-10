@@ -15,7 +15,6 @@ import java.util.List;
 @Data @NoArgsConstructor @AllArgsConstructor
 public class BankAccount {
     @Id
-    private Long id1;
     private String id;
     private double balance;
     private Date createdAt;
